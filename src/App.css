@@ -3,7 +3,7 @@
 }
 
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a5f;
   color: #fff;
   text-align: center;
   padding: 48px 16px 40px;
@@ -54,7 +54,7 @@
 
 .search-bar input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--accent);
 }
 
 /* Filters */
@@ -92,7 +92,7 @@
 
 .filter-group select:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--accent);
 }
 
 .results-count {
@@ -226,7 +226,7 @@
 }
 
 .details-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--accent);
   color: #fff;
   border: none;
   padding: 8px 18px;
@@ -367,7 +367,7 @@
 .enroll-btn {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--accent);
   color: #fff;
   border: none;
   border-radius: 10px;

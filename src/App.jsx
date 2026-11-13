@@ -42,7 +42,7 @@ function App() {
     <div className="app">
       <header className="header">
         <h1>Course Catalog</h1>
-        <p>Discover courses to advance your skills</p>
+        <p>Browse courses by topic, level, or instructor</p>
       </header>
       <main className="main">
         <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />

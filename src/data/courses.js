@@ -10,7 +10,7 @@ const courses = [
     students: 1240,
     price: 49.99,
     description:
-      "Learn the fundamentals of HTML, CSS, and JavaScript. Build responsive websites from scratch and understand how the web works.",
+      "Covers HTML, CSS, and JavaScript from the ground up. You'll build responsive sites and learn how browsers render pages.",
     topics: ["HTML5", "CSS3", "JavaScript Basics", "Responsive Design"],
   },
   {
@@ -24,7 +24,7 @@ const courses = [
     students: 980,
     price: 59.99,
     description:
-      "Master React.js from components to hooks. Build modern single-page applications with real-world projects.",
+      "Components, hooks, state, and routing in React. Each module ends with a hands-on project you can ship.",
     topics: ["Components", "Hooks", "State Management", "React Router"],
   },
   {
@@ -38,7 +38,7 @@ const courses = [
     students: 2100,
     price: 39.99,
     description:
-      "Start your programming journey with Python. Cover data types, control flow, functions, and object-oriented programming.",
+      "Write Python from day one. Covers data types, control flow, functions, and object-oriented programming.",
     topics: ["Variables", "Functions", "OOP", "File Handling"],
   },
   {
@@ -52,7 +52,7 @@ const courses = [
     students: 760,
     price: 69.99,
     description:
-      "Deep dive into essential data structures and algorithms. Prepare for technical interviews and write efficient code.",
+      "Arrays, trees, graphs, and dynamic programming — with analysis of time and space complexity for each.",
     topics: ["Arrays", "Trees", "Graphs", "Dynamic Programming"],
   },
   {
@@ -66,7 +66,7 @@ const courses = [
     students: 650,
     price: 89.99,
     description:
-      "Understand core machine learning algorithms and apply them to real datasets using Python and scikit-learn.",
+      "Regression, classification, clustering, and neural nets. Assignments use real datasets with scikit-learn.",
     topics: ["Regression", "Classification", "Clustering", "Neural Networks"],
   },
   {
@@ -80,7 +80,7 @@ const courses = [
     students: 890,
     price: 44.99,
     description:
-      "Learn user-centered design thinking, wireframing, prototyping, and usability testing to create delightful interfaces.",
+      "Design thinking, wireframing, prototyping, and usability testing. Focuses on making interfaces that work, not just look good.",
     topics: ["Design Thinking", "Wireframing", "Prototyping", "User Testing"],
   },
   {
@@ -94,7 +94,7 @@ const courses = [
     students: 720,
     price: 59.99,
     description:
-      "Build scalable server-side applications with Node.js, Express, and MongoDB. Learn REST API design and authentication.",
+      "Server-side JavaScript with Express and MongoDB. Covers REST API design, auth, and deployment.",
     topics: ["Express.js", "MongoDB", "REST APIs", "Authentication"],
   },
   {
@@ -108,7 +108,7 @@ const courses = [
     students: 540,
     price: 54.99,
     description:
-      "Understand common security threats, encryption, network security, and best practices for protecting digital assets.",
+      "Threat models, encryption, network security, and incident response. Includes hands-on labs with common attack vectors.",
     topics: ["Network Security", "Encryption", "Ethical Hacking", "Risk Management"],
   },
   {
@@ -122,7 +122,7 @@ const courses = [
     students: 830,
     price: 74.99,
     description:
-      "Master AWS services including EC2, S3, Lambda, and DynamoDB. Deploy and manage applications in the cloud.",
+      "EC2, S3, Lambda, and DynamoDB in practice. You'll deploy a working app to AWS by the end of the course.",
     topics: ["EC2", "S3", "Lambda", "DynamoDB"],
   },
   {
@@ -136,7 +136,7 @@ const courses = [
     students: 610,
     price: 64.99,
     description:
-      "Build beautiful cross-platform mobile apps with Flutter and Dart. One codebase for iOS and Android.",
+      "Cross-platform mobile development with Flutter and Dart. One codebase for iOS and Android.",
     topics: ["Dart", "Widgets", "State Management", "Navigation"],
   },
   {
@@ -150,7 +150,7 @@ const courses = [
     students: 1100,
     price: 34.99,
     description:
-      "Master SQL queries, database normalization, indexing, and learn to design efficient relational databases.",
+      "SQL queries, joins, normalization, and indexing. Ends with a capstone where you design a schema from requirements.",
     topics: ["SQL Queries", "Joins", "Normalization", "Indexing"],
   },
   {
@@ -164,7 +164,7 @@ const courses = [
     students: 480,
     price: 79.99,
     description:
-      "Automate your development workflow with Docker, Kubernetes, GitHub Actions, and monitoring tools.",
+      "Docker, Kubernetes, GitHub Actions, and monitoring. Set up a full CI/CD pipeline from scratch.",
     topics: ["Docker", "Kubernetes", "GitHub Actions", "Monitoring"],
   },
 ];
