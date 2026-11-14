@@ -1,13 +1,15 @@
 function SearchBar({ searchTerm, onSearchChange }) {
   return (
-    <div className="search-bar">
-      <span className="search-icon">&#128269;</span>
+    <div className="nav-search">
       <input
         type="text"
-        placeholder="Search courses by title, instructor, or topic..."
+        placeholder="Search for anything"
         value={searchTerm}
         onChange={(e) => onSearchChange(e.target.value)}
       />
+      <button className="nav-search-icon" tabIndex={-1}>
+        &#128269;
+      </button>
     </div>
   );
 }

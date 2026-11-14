@@ -1,27 +1,63 @@
+function StarRating({ rating }) {
+  const full = Math.floor(rating);
+  const hasHalf = rating % 1 >= 0.3;
+  const stars = [];
+  for (let i = 0; i < 5; i++) {
+    if (i < full) {
+      stars.push(<span key={i} className="star-icon">&#9733;</span>);
+    } else if (i === full && hasHalf) {
+      stars.push(<span key={i} className="star-icon half">&#9733;</span>);
+    } else {
+      stars.push(<span key={i} className="star-icon" style={{ opacity: 0.25 }}>&#9733;</span>);
+    }
+  }
+  return <span className="stars">{stars}</span>;
+}
+
+function formatStudents(n) {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`;
+  return n.toString();
+}
+
 function CourseCard({ course, onSelect }) {
-  const levelClass = `level-badge level-${course.level.toLowerCase()}`;
+  const discount = Math.round(
+    ((course.originalPrice - course.price) / course.originalPrice) * 100
+  );
 
   return (
     <div className="course-card" onClick={() => onSelect(course)}>
-      <div className="card-header">
-        <span className="category-tag">{course.category}</span>
-        <span className={levelClass}>{course.level}</span>
-      </div>
-      <h3 className="card-title">{course.title}</h3>
-      <p className="card-instructor">by {course.instructor}</p>
-      <p className="card-description">{course.description}</p>
-      <div className="card-meta">
-        <span className="meta-item">
-          <span className="star">&#9733;</span> {course.rating}
-        </span>
-        <span className="meta-item">{course.students.toLocaleString()} students</span>
-        <span className="meta-item">{course.duration}</span>
-      </div>
-      <div className="card-footer">
-        <span className="price">${course.price}</span>
-        <button className="details-btn" onClick={(e) => { e.stopPropagation(); onSelect(course); }}>
-          View Details
-        </button>
+      <img
+        className="card-thumbnail"
+        src={course.thumbnail}
+        alt={course.title}
+        loading="lazy"
+      />
+      <div className="card-body">
+        <h3 className="card-title">{course.title}</h3>
+        <p className="card-instructor">{course.instructor}</p>
+        <div className="card-rating">
+          <span className="rating-number">{course.rating}</span>
+          <StarRating rating={course.rating} />
+          <span className="rating-count">
+            ({course.ratings.toLocaleString("en-IN")})
+          </span>
+        </div>
+        <div className="card-meta-row">
+          {course.duration} total hours · {course.lectures} lectures · {course.level}
+        </div>
+        <div className="card-price-row">
+          <span className="price-current">₹{course.price}</span>
+          <span className="price-original">₹{course.originalPrice}</span>
+        </div>
+        <div className="card-badges">
+          {course.bestseller && (
+            <span className="badge badge-bestseller">Bestseller</span>
+          )}
+          {course.hot && (
+            <span className="badge badge-hot">Hot & New</span>
+          )}
+        </div>
       </div>
     </div>
   );
