@@ -1,0 +1,55 @@
+:root {
+  --text: #3c3b37;
+  --text-h: #1c1d1f;
+  --text-muted: #6a6f73;
+  --bg: #fff;
+  --bg-page: #f7f9fa;
+  --border: #d1d7dc;
+  --border-light: #e8e9eb;
+  --code-bg: #f7f9fa;
+  --accent: #a435f0;
+  --accent-hover: #8710d8;
+  --accent-bg: rgba(164, 53, 240, 0.06);
+  --accent-border: rgba(164, 53, 240, 0.4);
+  --star: #e59819;
+  --bestseller-bg: #eceb98;
+  --bestseller-text: #3d3c0a;
+  --hot-bg: #ffeadb;
+  --hot-text: #612012;
+  --success: #1e6055;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  --sans: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
